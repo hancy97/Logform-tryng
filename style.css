@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0%;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    background-image: url("Assets/backimg1.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    filter: blur(10px);
+}
+
+.wholelog {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(50%, 50%);
+    width: 400px;
+    height: 500px;
+    padding: 80px 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.profile {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: calc(-80px/2);
+    left: calc(50% - 40px);
+}
+
+.wholelog h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wholelog p {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.wholelog input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wholelog input[type=email],
+.wholelog input[type=password] {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.wholelog input[type=submit] {
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    background: rgba(0, 0, 255, 0.5);
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15%;
+}
+
+.wholelog input[type=checkbox] {
+    width: 20%;
+}
